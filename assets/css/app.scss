@@ -1,0 +1,86 @@
+body {
+  justify-content: center;
+  display: flex;
+
+  p, h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    width: 40rem;
+  }
+
+  .card-link {
+
+    .bi-heart {
+      display: block;
+    }
+
+    .bi-heart-fill {
+      display: none;
+    }
+
+    &.like {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      span {
+        display: block;
+        margin-left: 5px;
+      }
+    }
+
+    &.like.active {
+      color: #dc3545;
+
+      .bi-heart-fill {
+        display: block;
+      }
+
+      .bi-heart {
+        display: none;
+      }
+    }
+  }
+
+  .bd-placeholder-img {
+    text-anchor: middle;
+  }
+
+  .profile {
+    margin-top: 30px;
+    display: flex;
+    background: #f5f5f5;
+
+    .profile_avatar {
+      display: block;
+      height: 200px;
+      width: 200px;
+      border-radius: 8px;
+
+    }
+
+    .profile_info {
+      margin-left: 20px;
+
+      .profile_info--email {
+        margin-top: 10px;
+      }
+
+      .profile_info--registr {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .posts {
+    .card-img-top {
+      display: block;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+}
